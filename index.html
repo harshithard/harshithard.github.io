@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -40,6 +40,11 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpeg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Harshitha Raghavan Devarajan</a></h1>
+        <p class="profile-role">Applied Scientist, AI/ML and LLM Systems</p>
+        <div class="profile-badges">
+          <span>Based in California</span>
+          <span>Open to impactful AI roles</span>
+        </div>
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/harshithard" target="_blank" class="github"><i class="bx bxl-github"></i></a>
           <a href="mailto:harshithard05@gmail.com" class="gmail"><i class="bx bx-envelope"></i></a>
@@ -64,10 +69,28 @@
   </header>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in" style="text-align: center;">
-      <h1>Harshitha R D</h1>
-      <p>I build AI that ships. Not AI that slides.</p>
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="hero-container container" data-aos="fade-in">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>Production AI, built with rigor and personality.</h1>
+          <p class="hero-subtitle">I design and ship LLM and ML systems that survive contact with real users, noisy data, and business constraints.</p>
+          <div class="hero-actions">
+            <a href="#resume" class="btn-scroll">View Experience</a>
+            <a href="#contact" class="btn-scroll btn-scroll-alt">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-panel" data-aos="fade-left" data-aos-delay="100">
+          <h3>Current Focus</h3>
+          <p>Agentic LLM platforms, retrieval architecture, and measurable model reliability.</p>
+          <ul>
+            <li>Applied Scientist at AWS</li>
+            <li>19 publications across AI and systems</li>
+            <li>M.S. Computer Science, NYU</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -163,24 +186,6 @@
           <p>Things I'm good at. Some of them I'm <em>annoyingly</em> good at.</p>
         </div>
 
-        <style>
-          .skill-category { margin-bottom: 2rem; }
-          .skill-category h5 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 0.75rem; }
-          .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-          .skill-tag {
-            display: inline-block;
-            padding: 0.35rem 0.85rem;
-            border-radius: 2rem;
-            font-size: 0.82rem;
-            font-weight: 500;
-            background: #f0f4ff;
-            color: #2c3e7a;
-            border: 1px solid #d0d9f5;
-            transition: all 0.2s ease;
-          }
-          .skill-tag:hover { background: #2c3e7a; color: #fff; border-color: #2c3e7a; cursor: default; }
-        </style>
-
         <div class="row" data-aos="fade-up">
           <div class="col-lg-6">
             <div class="skill-category">
@@ -263,7 +268,7 @@
         </div>
 
         <h3 class="resume-title">Certifications</h3>
-        <div class="row" style="margin-bottom: 2rem;">
+        <div class="row cert-grid-spacer">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-award"></i></div>
             <h4 class="title"><a href="https://www.credential.net/9a982721-d84b-425c-aec5-8faa08e33e45#gs.5oc9ig" target="_blank">Google Certified &mdash; TensorFlow Developer</a></h4>
@@ -316,7 +321,7 @@
         </div>
 
         <div class="text-center mt-4" data-aos="fade-up">
-          <a href="https://scholar.google.com/citations?user=TOikGYUAAAAJ&hl=en" target="_blank" style="display:inline-block; padding: 0.6rem 1.8rem; background: #050d18; color: #fff; border-radius: 2rem; font-size: 0.9rem; font-weight: 600; text-decoration: none; letter-spacing: 0.05em;">View All 19 Publications on Google Scholar &rarr;</a>
+          <a href="https://scholar.google.com/citations?user=TOikGYUAAAAJ&hl=en" target="_blank" class="pill-cta pill-cta-dark">View All 19 Publications on Google Scholar &rarr;</a>
         </div>
       </div>
     </section>
@@ -328,55 +333,6 @@
           <h2>Writing</h2>
           <p>I write about AI/ML on Substack — no hype, no fluff, just the stuff that actually matters. Free forever.</p>
         </div>
-
-        <style>
-          .article-card {
-            background: #fff;
-            border: 1px solid #e8ecf0;
-            border-radius: 12px;
-            padding: 1.75rem;
-            height: 100%;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            display: flex;
-            flex-direction: column;
-          }
-          .article-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 32px rgba(5, 13, 24, 0.1);
-          }
-          .article-date {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #aaa;
-            margin-bottom: 0.6rem;
-          }
-          .article-card h4 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: #050d18;
-            margin-bottom: 0.75rem;
-            line-height: 1.4;
-          }
-          .article-card h4 a { color: inherit; text-decoration: none; }
-          .article-card h4 a:hover { color: #149ddd; }
-          .article-card p {
-            font-size: 0.88rem;
-            color: #555;
-            line-height: 1.6;
-            flex: 1;
-            margin-bottom: 1rem;
-          }
-          .article-read-link {
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: #149ddd;
-            text-decoration: none;
-            letter-spacing: 0.03em;
-          }
-          .article-read-link:hover { text-decoration: underline; }
-        </style>
 
         <div class="row g-4" data-aos="fade-up">
           <div class="col-lg-4 col-md-6">
@@ -406,7 +362,7 @@
         </div>
 
         <div class="text-center mt-4" data-aos="fade-up">
-          <a href="https://substack.com/@minimindbytes" target="_blank" style="display:inline-block; padding: 0.6rem 1.8rem; background: #ff6719; color: #fff; border-radius: 2rem; font-size: 0.9rem; font-weight: 600; text-decoration: none; letter-spacing: 0.05em;">Subscribe on Substack &rarr;</a>
+          <a href="https://substack.com/@minimindbytes" target="_blank" class="pill-cta pill-cta-orange">Subscribe on Substack &rarr;</a>
         </div>
       </div>
     </section>
@@ -489,7 +445,7 @@
               <h4>Phone:</h4>
               <p>+1 (646) 578-7799</p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5742.162211246172!2d-73.94077181370002!3d40.7885609476248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1710085698120!5m2!1sen!2sus" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+            <iframe src="https://www.google.com/maps?q=Sunnyvale,+CA&output=embed" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
           </div>
         </div>
       </div>
